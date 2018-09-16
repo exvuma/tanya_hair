@@ -1,0 +1,1 @@
+webpackHotUpdate(0,{"./app.js":function(o,a){var s=moment().format("MMMM Do YYYY, h:mm:ss a");console.log(s),console.log("asdasd")}});
