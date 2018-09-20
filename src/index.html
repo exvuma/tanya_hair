@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Hair by Tanya</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-        <link rel="stylesheet" src="./template.css">
+        <link rel="stylesheet" src="./src/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Poppins:400,700">
         <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-        <script src="../dist/assets/app.bundle.js"></script>
+        <!-- <script src="../dist/assets/app.bundle.js"></script> -->
         <script src="http://localhost:35729/livereload.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
-        <script src="./template.js"></script>
+        <script src="./src/template.js"></script>
         <style>
             /*  This is text that makes animations flow well
             https://cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.css */
@@ -81,7 +81,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" data-anchor="page-top" data-active="false">
-                        <img src="./img/uglyAF_logo.png" alt="Hair by Tanya">
+                        <img src="./src/img/uglyAF_logo.png" alt="Hair by Tanya">
                     </a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <!-- TODO figure out what burger does -->
@@ -114,16 +114,17 @@
                 <!-- <h1 class="title">
                     Hair by Tanya
                 </h1> -->
-                <img src="./img/uglyAF_logo.png" alt="Logo ysimplicity">
+                <img src="./src/img/uglyAF_logo.png" alt="Logo ysimplicity">
                 <h2 class="subtitle is-size-3 is-size-5-mobile has-text-right has-text-black" id="js-subtitle-rotating">
                     some cool lines that rotate
                 </h2>
                 <!-- <h2 class="subtitle">
-                     o que seu serviço ou produto preci
+                    o que seu serviço ou produto preci
                 </h2> -->
             </div> 
         </section>
         <div class="box box-base cta is-shadowless is-radiusless">
+            <img src="./src/img/IMG_9214.jpg" alt="Logo ysimplicity" id="ani-img">
             <div class="container">
                 <p class="has-text-centered is-size-5 is-size-6-mobile">
                     Do we even want another headline here? 
@@ -140,7 +141,7 @@
         </section>
         <section class="section">
             <div class="container">
-                <h1 class="title">
+                <h1 class="title" id="pinned-trigger1">
                    Hair by Tanya
                 </h1>
 
