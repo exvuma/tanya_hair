@@ -8,6 +8,7 @@ module.exports = {
   entry: {
     app: __dirname + '/src/app.js'
   },
+  devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
@@ -26,7 +27,7 @@ module.exports = {
   devServer: {
     // contentBase: path.resolve(__dirname, 'src'),    // New
     // contentBase: path.join(__dirname, 'dist'),
-    compress: true,
+    compress: false,
     port: 9000,
     hot: true
   }

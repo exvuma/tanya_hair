@@ -7,10 +7,12 @@
         <title>Hair by Tanya</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
         <link rel="stylesheet" src="./src/template.css">
+        <link rel="stylesheet" type="text/css" href="./src/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Poppins:400,700">
         <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- <script src="../dist/assets/app.bundle.js"></script> -->
         <script src="http://localhost:35729/livereload.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
@@ -81,7 +83,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" data-anchor="page-top" data-active="false">
-                        <img src="./src/img/uglyAF_logo.png" alt="Hair by Tanya">
+                        <!-- <img class="ani-img" id="ani-img" src="./src/img/logo.png" alt="Hair by Tanya"> -->
                     </a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <!-- TODO figure out what burger does -->
@@ -92,16 +94,16 @@
                 </div>
                 <div id="navbarMenu" class="navbar-menu">
                     <div class="navbar-end">
-                        <a class="navbar-item" data-anchor="contact">
+                        <a class="scrollLink navbar-item" data-anchor="contact" href="#contact" onClick="scrollTo()">
                             Contact
                         </a>
-                        <a class="navbar-item" data-anchor="about">
+                        <a class="scrollLink navbar-item" data-anchor="about" href="#about">
                             About Tanya
                         </a>
-                        <a class="navbar-item" data-anchor="services">
+                        <a class="scrollLink navbar-item" data-anchor="services" href="#services">
                             Services
                         </a>
-                        <a class="navbar-item" data-anchor="stories">
+                        <a class="scrollLink navbar-item" data-anchor="stories" href="#stories">
                             Stories
                         </a>
                     </div>
@@ -109,22 +111,26 @@
             </div>
         </nav>
        
-        <section class="section hero is-medium is-light is-bold">  
-            <div class="container">
-                <!-- <h1 class="title">
-                    Hair by Tanya
-                </h1> -->
-                <img src="./src/img/uglyAF_logo.png" alt="Logo ysimplicity">
-                <h2 class="subtitle is-size-3 is-size-5-mobile has-text-right has-text-black" id="js-subtitle-rotating">
-                    some cool lines that rotate
-                </h2>
+        <section class="section hero is-small is-light is-bold">  
+            <div class="hero-body">
+                <div class="container">
+                    <img class="ani-img" id="ani-img" src="./src/img/logo.png" alt="Logo ysimplicity">
+                    <!-- <h1 class="title">
+                        Hair by Tanya
+                    </h1> -->
+                    <!-- <h2 class="subtitle is-size-3 is-size-5-mobile has-text-right has-text-black" id="js-subtitle-rotating">
+                        some cool lines that rotate
+                    </h2> -->
+
+                </div>
                 <!-- <h2 class="subtitle">
                     o que seu serviço ou produto preci
                 </h2> -->
             </div> 
+
         </section>
         <div class="box box-base cta is-shadowless is-radiusless">
-            <img src="./src/img/IMG_9214.jpg" alt="Logo ysimplicity" id="ani-img">
+            <img src="./src/img/IMG_9214.jpg" class="hero ani-img" alt="Logo ysimplicity" id="ani-img">
             <div class="container">
                 <p class="has-text-centered is-size-5 is-size-6-mobile">
                     Do we even want another headline here? 
@@ -135,6 +141,8 @@
             </div>
         </div>
         <section class="container">
+            <a href="https://go.booker.com/location/TanyaFarisHair/service-menu" class="button is-dark title section-title has-text-centered has-text-weight-normal">Book Now</a>
+
             <h2 class="title section-title has-text-centered has-text-weight-normal" id="contact">
                 Contact
             </h2>
@@ -149,6 +157,34 @@
                     <div class="container">
                         <p class="has-text-centered is-size-5 is-size-6-mobile">
                             Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
+                            Tanya loves hair blahh...
                             <br>
                             <br class="is-hidden-tablet"> Aliamos tecnologia com processos de gestão para criar
                             <br class="is-hidden-mobile"> a solução que seu serviço ou produto precisa.
@@ -162,9 +198,19 @@
         </section>
         <section class="container">
             <h2 class="title section-title is-2 has-text-centered has-text-weight-normal" id="services">
-                Services
+                Services 
             </h2>
-        
+        </section>
+        <section class="container">
+            <div class="columns features">
+                <div class="column" id="some">
+                    <img src="src/img/IMG_0014.jpg" class="ani-img">
+                </div>
+                <div class="column">
+                    <img src="src/img/IMG_0010.jpg" class="ani-img">
+                </div>
+ 
+            </div>
             <div class="columns features">
                 <div class="column is-4">
                     <h3 class="title is-5 feature-title has-text-black has-text-centered has-text-weight-normal">
@@ -237,10 +283,17 @@
                     </div>
                 </div><!-- tecnologia e desenvolvimento -->
             </div>
-        
+            <div class="columns features" id="stories">
+            
+                <div class="column">
+                    <img src="src/img/IMG_0046.gif" class="ani-img">
+                </div>
+            </div>
+
             <!-- // PRODUTOS -->
         
         </section>
+
     </body>
 
 </html>
