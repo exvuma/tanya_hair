@@ -2,12 +2,20 @@
 // var rightNow = moment().format('MMMM Do YYYY, h:mm:ss a');
 // var rightNow = moment().format('MMMM Do YYYY, h:mm:ss a');
 // console.log(rightNow);
-let ScrollMagic = require('scrollmagic')
-let TweenMax = require('gsap/TweenMax').TweenMax
+// import  { TweenLiteTweenLite, CSSPluginCSSPlugin } from  'gsap';
+//https://wikiki.github.io/components/carousel/
 var $ = require("jQuery");
+let ScrollMagic = require('scrollmagic')
+require("scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap");
+let Gasp = require('gasp');
+// require( "animation.gsap");
 // let TweenMax = require('gsap/TweenMax').TweenMax
+require( 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators');
+let TweenMax = require( 'gsap/src/uncompressed/TweenMax');
+let TimelineMax = require( 'gsap/src/uncompressed/TimelineMax');
 
-import  { TweenLiteTweenLite, CSSPluginCSSPlugin } from  'gsap';
+// let TweenMax = Gasp.TweenMax
+
 // console.log('sdf324');
 
 // "October 23rd 2016, 9:30:24 pm"
@@ -22,20 +30,29 @@ var controller = new ScrollMagic.Controller();
 var blockTween = new TweenMax.to(".ani-img.hero", 1.5, {
   scale: 1.2
 })
-var blockTween2 = new TweenMax.to(".is-5>.ani-img", 1.5, {
+var blockTweenContact = new TweenMax.to("#contact", 1.5, {
     scale: 1.2,
 })
-var scene = new ScrollMagic.Scene({
-  triggerElement: "#some", // starting scene, when reaching this element
+var blockTweenServices = new TweenMax.to(".is-5>.ani-img", 1.5, {
+    scale: 1.2,
+})
+var sceneContact= new ScrollMagic.Scene({
+  triggerElement: "#contact", // starting scene, when reaching this element
   duration: 400 // pin the element for a total of 400px
 })
-    .setTween(blockTween2)
-  //  .setPin(".is-5>.ani-img")// the element we want to pin
-
-
-
-// Add Scene to ScrollMagic Controller
-controller.addScene(scene);
+.setTween(blockTweenContact)
+var sceneServices = new ScrollMagic.Scene({
+  triggerElement: "#services", // starting scene, when reaching this element
+  duration: 400 // pin the element for a total of 400px
+})
+    .setTween(blockTweenServices)
+    //  .setPin(".is-5>.ani-img")// the element we want to pin
+    
+    
+    
+    // Add Scene to ScrollMagic Controller
+controller.addScene(sceneContact);
+controller.addScene(sceneServices);
 // .addTo(controller)
 
 
