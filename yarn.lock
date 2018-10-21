@@ -470,6 +470,10 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
 
+bulma-carousel@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/bulma-carousel/-/bulma-carousel-3.0.0.tgz#40fc8429393325f2bd6e41bf9fc6de23a0cdedea"
+
 bytes@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-1.0.0.tgz#3569ede8ba34315fab99c3e92cb04c7220de1fa8"
@@ -1341,6 +1345,12 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
+gasp@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/gasp/-/gasp-0.0.2.tgz#ba48a71546aaad75fe1162dd74c2fc15bedffb11"
+  dependencies:
+    q "^1.0.0"
+
 gauge@~2.7.3:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/gauge/-/gauge-2.7.4.tgz#2c03405c7538c39d7eb37b317022e325fb018bf7"
@@ -1607,6 +1617,13 @@ import-local@^2.0.0:
   dependencies:
     pkg-dir "^3.0.0"
     resolve-cwd "^2.0.0"
+
+imports-loader@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/imports-loader/-/imports-loader-0.8.0.tgz#030ea51b8ca05977c40a3abfd9b4088fe0be9a69"
+  dependencies:
+    loader-utils "^1.0.2"
+    source-map "^0.6.1"
 
 imurmurhash@^0.1.4:
   version "0.1.4"
@@ -1921,7 +1938,7 @@ loader-utils@^0.2.16:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-loader-utils@^1.1.0:
+loader-utils@^1.0.2, loader-utils@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
   dependencies:
@@ -2154,6 +2171,10 @@ mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   resolved "http://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+morphext@^2.4.7:
+  version "2.4.7"
+  resolved "https://registry.yarnpkg.com/morphext/-/morphext-2.4.7.tgz#e0ce23b326ffc8871d58f91618e70426cb87673e"
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -2662,6 +2683,10 @@ punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
 
+q@^1.0.0:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
+
 qs@6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.1.tgz#349cdf6eef89ec45c12d7d5eb3fc0c870343a6d8"
@@ -2896,9 +2921,9 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
-scrollmagic@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/scrollmagic/-/scrollmagic-2.0.5.tgz#ad7597341c76fb1f4a5bec12968a09223bd08dd9"
+scrollmagic@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/scrollmagic/-/scrollmagic-2.0.6.tgz#518bdf85a1755af819fe109ee8517b8e798c4e9a"
 
 select-hose@^2.0.0:
   version "2.0.0"

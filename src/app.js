@@ -1,32 +1,15 @@
 
-// var rightNow = moment().format('MMMM Do YYYY, h:mm:ss a');
-// var rightNow = moment().format('MMMM Do YYYY, h:mm:ss a');
-// console.log(rightNow);
-// import  { TweenLiteTweenLite, CSSPluginCSSPlugin } from  'gsap';
-//https://wikiki.github.io/components/carousel/
 var $ = require("jQuery");
 let ScrollMagic = require('scrollmagic')
 require("scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap");
-let Gasp = require('gasp');
-// require( "animation.gsap");
-// let TweenMax = require('gsap/TweenMax').TweenMax
+// let Gasp = require('gasp');
+
 require( 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators');
 let TweenMax = require( 'gsap/src/uncompressed/TweenMax');
 let TimelineMax = require( 'gsap/src/uncompressed/TimelineMax');
 
-// let TweenMax = Gasp.TweenMax
 
-// console.log('sdf324');
-
-// "October 23rd 2016, 9:30:24 pm"
 var controller = new ScrollMagic.Controller();
-// tween.to docs :\ greensock.com/docs/TweenMax/static.to()
-// var blockTween = new TweenMax.to("#ani-img", 1.5, {
-//   scale: 1.2
-//   // backgroundColor: "red",
-//   // width:"5%",
-//   // height: "auto",
-// });
 var blockTween = new TweenMax.to(".ani-img.hero", 1.5, {
   scale: 1.2
 })

@@ -4,32 +4,38 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 var LiveReloadPlugin = require('webpack-livereload-plugin');
 var options = {}
 module.exports = {
-  context: path.resolve(__dirname, "src"),
+  // context: path.resolve(__dirname, "src"),
   entry: {
-    app: __dirname + '/src/app.js'
+    // app: __dirname + '/src/app.js'
+    client: path.join(__dirname, './src/app.js'),
+    worker: path.join(__dirname, './src/worker.js'),
   },
-  devtool: "source-map",
+  devtool: "none",// to get worker preview to actually fucking work"source-map",
+  // devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "index.html",
+      filename: "src/index.html",
+      template: "src/index.html",
       inject: "body"
     }),
     new LiveReloadPlugin(options),
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    // new webpack.HotModuleReplacementPlugin()
   ],
   output: {
     path: path.resolve(__dirname, "dist", "assets"),
+    filename: "[name].bundle.js",
     // publicPath: "/assets", // New
-    filename: "[name].bundle.js"
+    filename: '[name].js',
+    path: path.join(__dirname, 'dist/builds'),
   },
+  mode: "production",//"development",
   devServer: {
     // contentBase: path.resolve(__dirname, 'src'),    // New
     // contentBase: path.join(__dirname, 'dist'),
     compress: false,
     port: 9000,
-    hot: true
+    hot: false
   },
   resolve: {
     alias: {
@@ -41,5 +47,13 @@ module.exports = {
       "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
       "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
     },
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(css)$/,
+        loader: 'raw-loader',
+      },
+    ]
   }
 };

@@ -8,15 +8,19 @@
   "devDependencies": {
     "gsap": "^2.0.2",
     "html-webpack-plugin": "^3.2.0",
+    "raw-loader": "^0.5.1",
     "scrollmagic": "^2.0.6",
     "webpack": "^4.17.2",
     "webpack-dev-server": "^3.1.8",
-    "webpack-livereload-plugin": "^2.1.1"
+    "webpack-livereload-plugin": "^2.1.1",
+    "workers-preview": "^1.0.5"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && yarn build:add-script",
+    "build:add-script": "node bin/add-scripts.js dist/builds/worker.js dist/builds/client.js",
     "serve": "npm run watch & http-server",
     "watch": "webpack --watch",
+    "preview": "yarn build && workers-preview < dist/builds/worker.js",
     "start": "webpack-dev-server --watch",
     "serve2": "webpack-dev-server --open"
   },
