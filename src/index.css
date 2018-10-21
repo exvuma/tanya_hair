@@ -1,0 +1,37 @@
+img.hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.hero img {
+  width: 20%;
+}
+.box-base > .container {
+  text-align: center;
+}
+.headline{
+  font-weight: 600;
+}
+.container.contact{
+  text-align: center;
+}
+.container.contact > a{
+      display: inline-block;
+}
+
+.container.contact > a > img {
+  vertical-align: middle;
+}
+.fa {
+    padding: 20px;
+    font-size: 70px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+p.has-text-centered.is-size-5.is-size-6-mobile{
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
