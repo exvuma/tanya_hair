@@ -3,7 +3,7 @@ var $ = require("jQuery");
 let ScrollMagic = require('scrollmagic')
 require("scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap");
 // let Gasp = require('gasp');
-
+require("./index.css");
 require( 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators');
 let TweenMax = require( 'gsap/src/uncompressed/TweenMax');
 let TimelineMax = require( 'gsap/src/uncompressed/TimelineMax');

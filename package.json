@@ -16,19 +16,22 @@
     "workers-preview": "^1.0.5"
   },
   "scripts": {
-    "build": "webpack && yarn build:add-script",
-    "build:add-script": "node bin/add-scripts.js dist/builds/worker.js dist/builds/client.js",
+    "build": "webpack && yarn build:add-script && cp -R src/img dist/src/img",
+    "build:add-script": "node bin/add-scripts.js dist/worker.bundle.js dist/client.bundle.js",
     "serve": "npm run watch & http-server",
     "watch": "webpack --watch",
-    "preview": "yarn build && workers-preview < dist/builds/worker.js",
+    "preview": "yarn build && workers-preview < dist/worker.bundle.js",
     "start": "webpack-dev-server --watch",
-    "serve2": "webpack-dev-server --open"
+    "serve2": "webpack-dev-server --open",
+    "deploy": "yarn build && scp -r dist root@159.203.221.190:/var/www/tanya_hair/dist"
   },
   "dependencies": {
     "bulma-carousel": "^3.0.0",
+    "css-loader": "^1.0.0",
     "gasp": "^0.0.2",
     "imports-loader": "^0.8.0",
     "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.4.4",
     "morphext": "^2.4.7",
     "webpack-cli": "^3.1.0"
   }
