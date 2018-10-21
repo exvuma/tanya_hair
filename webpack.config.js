@@ -14,7 +14,8 @@ module.exports = {
   // devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "src/index.html",
+      // filename: "src/index.html",
+      favicon:"src/favico.ico",
       template: "src/index.html",
       inject: "body"
     }),
@@ -23,11 +24,9 @@ module.exports = {
     // new webpack.HotModuleReplacementPlugin()
   ],
   output: {
-    path: path.resolve(__dirname, "dist", "assets"),
+    path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
     // publicPath: "/assets", // New
-    filename: '[name].js',
-    path: path.join(__dirname, 'dist/builds'),
   },
   mode: "production",//"development",
   devServer: {
