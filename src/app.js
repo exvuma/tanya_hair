@@ -1,5 +1,5 @@
 
-var $ = require("jQuery");
+var $ = require("jquery");
 let ScrollMagic = require('scrollmagic')
 require("scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap");
 // let Gasp = require('gasp');
